@@ -1,11 +1,9 @@
 import useSWR from 'swr';
 import useSWRInfinite from 'swr/infinite';
-import { 
-  Service, 
-  Instance, 
-  Event, 
-  Deployment 
-} from './types';
+import { Service } from "@/lib/models/service";
+import { Instance } from "@/lib/models/instance";
+import { Event } from "@/lib/models/event";
+import { Deployment } from "@/lib/models/deployment";
 
 // Generic paginated response type
 export interface PaginatedResponse<T> {

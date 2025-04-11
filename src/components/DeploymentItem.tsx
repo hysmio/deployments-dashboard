@@ -1,4 +1,5 @@
-import { Deployment } from "@/lib/types";
+import { Deployment } from "@/lib/models/deployment";
+import { Event } from "@/lib/models/event";
 import { Badge } from "@/components/ui/badge";
 import { formatRelativeTime, formatDate } from "@/lib/data";
 import {
@@ -10,13 +11,13 @@ import {
 import { EventItem } from "@/components/EventItem";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
+import { DeploymentWithEnrichedData } from "@/lib/types";
 
-interface DeploymentItemProps {
-  deployment: Deployment;
-}
+type DeploymentProps = {
+  deployment: DeploymentWithEnrichedData;
+};
 
-export function DeploymentItem({ deployment }: DeploymentItemProps) {
+export function DeploymentItem({ deployment }: DeploymentProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showAllEvents, setShowAllEvents] = useState(false);
 
@@ -68,7 +69,7 @@ export function DeploymentItem({ deployment }: DeploymentItemProps) {
                   }`}
                 />
                 <span className="font-medium">
-                  {formatDate(deployment.start_time)}
+                  {formatDate(deployment.started_at)}
                 </span>
                 <Badge className={statusColor}>
                   {deployment.status.toUpperCase()}
@@ -93,11 +94,11 @@ export function DeploymentItem({ deployment }: DeploymentItemProps) {
                 </Badge>
               )}
 
-              {deployment.end_time && (
+              {deployment.completed_at && (
                 <div className="text-xs text-muted-foreground">
                   {getDeploymentDuration(
-                    deployment.start_time,
-                    deployment.end_time
+                    deployment.started_at,
+                    deployment.completed_at
                   )}
                 </div>
               )}

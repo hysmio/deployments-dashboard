@@ -4,12 +4,12 @@ import { InstanceRepository } from '@/lib/repositories/InstanceRepository';
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
 ) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get('id');
+
   try {
-    const deploymentId = params.id;
-    
-    if (!deploymentId) {
+    if (!id) {
       return NextResponse.json(
         { error: 'Deployment ID is required' },
         { status: 400 }
@@ -20,7 +20,7 @@ export async function GET(
     const instanceRepo = new InstanceRepository();
     
     // Find the deployment
-    const deployment = await deploymentRepo.findOne({ id: deploymentId });
+    const deployment = await deploymentRepo.findOne({ id });
     
     if (!deployment) {
       return NextResponse.json(

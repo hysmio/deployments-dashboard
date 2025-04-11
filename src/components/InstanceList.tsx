@@ -1,4 +1,4 @@
-import { Instance } from "@/lib/types";
+import { Instance } from "@/lib/models/instance";
 import { InstanceItem } from "@/components/InstanceItem";
 
 interface InstanceListProps {

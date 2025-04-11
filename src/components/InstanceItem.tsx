@@ -1,4 +1,4 @@
-import { Instance } from "@/lib/types";
+import { Instance } from "@/lib/models/instance";
 import {
   Accordion,
   AccordionContent,
@@ -17,9 +17,9 @@ interface InstanceItemProps {
   instance: Instance;
 }
 
-export function InstanceItem({ instance }: InstanceItemProps) {
-  const lastDeployment = getLastDeploymentForInstance(instance.id);
-  const events = getEventsByInstance(instance.id);
+export async function InstanceItem({ instance }: InstanceItemProps) {
+  const lastDeployment = await getLastDeploymentForInstance(instance.id);
+  const events = await getEventsByInstance(instance.id);
 
   return (
     <Accordion type="single" collapsible className="w-full">

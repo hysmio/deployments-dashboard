@@ -1,10 +1,10 @@
 import {
-  Event,
   DeploymentStartedEventData,
   DeploymentSucceededEventData,
   DeploymentUpdatedEventData,
   DeploymentFailedEventData,
 } from "@/lib/types";
+import { Event } from "@/lib/models/event";
 import { Badge } from "@/components/ui/badge";
 import { getUpdateTypeColor } from "@/lib/data";
 

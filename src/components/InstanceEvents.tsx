@@ -5,8 +5,8 @@ interface InstanceEventsProps {
   instanceId: string;
 }
 
-export function InstanceEvents({ instanceId }: InstanceEventsProps) {
-  const events = getEventsByInstance(instanceId);
+export async function InstanceEvents({ instanceId }: InstanceEventsProps) {
+  const events = await getEventsByInstance(instanceId);
 
   // Sort events chronologically, most recent first
   const sortedEvents = [...events].sort(

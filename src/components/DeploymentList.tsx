@@ -1,8 +1,8 @@
-import { Deployment } from "@/lib/types";
+import { DeploymentWithEnrichedData } from "@/lib/types";
 import { DeploymentItem } from "@/components/DeploymentItem";
 
 interface DeploymentListProps {
-  deployments: Deployment[];
+  deployments: DeploymentWithEnrichedData[];
 }
 
 export function DeploymentList({ deployments }: DeploymentListProps) {

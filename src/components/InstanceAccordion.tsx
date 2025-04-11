@@ -12,6 +12,7 @@ import { Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useInfiniteDeployments } from "@/lib/api";
 import { formatRelativeTime } from "@/lib/data";
+import { DeploymentWithEnrichedData } from "@/lib/types";
 
 interface InstanceAccordionProps {
   instance: Instance;
@@ -91,7 +92,7 @@ export function InstanceAccordion({
                     } mr-1`}
                   />
                   <span className="text-xs">
-                    {formatRelativeTime(mostRecentDeployment.start_time)}
+                    {formatRelativeTime(mostRecentDeployment.started_at)}
                   </span>
                 </div>
               )}
@@ -145,7 +146,9 @@ export function InstanceAccordion({
               </div>
 
               <div className="px-4 pb-4">
-                <DeploymentList deployments={deployments} />
+                <DeploymentList
+                  deployments={deployments as DeploymentWithEnrichedData[]}
+                />
 
                 {!pagination.isReachingEnd && (
                   <div className="flex justify-center mt-4">

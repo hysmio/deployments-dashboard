@@ -1,4 +1,4 @@
-import { Event } from "@/lib/types";
+import { Event } from "@/lib/models/event";
 import { Badge } from "@/components/ui/badge";
 import { getEventColor, formatDate } from "@/lib/data";
 import { EventDetails } from "@/components/EventDetails";

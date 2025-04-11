@@ -1,3 +1,6 @@
+import { Deployment } from "./models/deployment";
+import { Event } from "./models/event";
+
 export type EventType = 
   | 'deployment_started'
   | 'deployment_succeeded' 
@@ -57,3 +60,17 @@ export interface DeploymentFailedEventData {
   apply_output?: string;
   approval_url?: string;
 }
+
+export type DeploymentWithEnrichedData = Deployment & {
+  started_at: string;
+  buildkite_build_url: string;
+  commit_author: string;
+  commit_message: string;
+  commit: string;
+  events: Event[];
+  id: string;
+  instance_id: string;
+  status: Deployment["status"];
+  failed_jobs: string[];
+  completed_at: string;
+};
