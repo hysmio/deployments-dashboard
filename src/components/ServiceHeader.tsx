@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Service } from "@/lib/types";
+import { Service } from "@/lib/models/service";
 import { useServiceStats } from "@/lib/api";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -11,6 +13,7 @@ interface ServiceHeaderProps {
 
 export function ServiceHeader({ service, instanceCount }: ServiceHeaderProps) {
   const { stats, isLoading } = useServiceStats(service.name);
+  console.log(stats, isLoading);
 
   return (
     <div className="flex flex-col gap-4 bg-muted/30 p-4 rounded-lg border">
@@ -40,7 +43,9 @@ export function ServiceHeader({ service, instanceCount }: ServiceHeaderProps) {
             </div>
             <div className="text-sm">
               <span className="font-medium">Created:</span>{" "}
-              {new Date(service.created_at).toLocaleString()}
+              <time dateTime={service.created_at} suppressHydrationWarning>
+                {new Date(service.created_at).toLocaleString()}
+              </time>
             </div>
           </div>
         </div>

@@ -1,0 +1,408 @@
+[
+  {
+    "name": "dev",
+    "service": "email-mailchimp",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "0700990f-a9da-4e73-b40f-5ebb32549867"
+  },
+  {
+    "name": "dev",
+    "service": "engagement-tracker",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "0b3d7230-7a9d-4fc3-ae97-afef133ee783"
+  },
+  {
+    "name": "prod",
+    "service": "moderation",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "0cb638eb-d30c-498f-820a-a8165d81c3dd"
+  },
+  {
+    "name": "dev",
+    "service": "provider-stabilityai",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "0f84444a-fea3-411d-9c58-9e7ee35782d8"
+  },
+  {
+    "name": "dev",
+    "service": "payments-google",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "10175f69-f2a5-41e4-a910-133e7dee47d8"
+  },
+  {
+    "name": "dev",
+    "service": "generations",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "14811a63-1a35-467d-b16e-02c89b2d64b9"
+  },
+  {
+    "name": "dev",
+    "service": "msk",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "163fb9d4-477a-40a3-bcd1-1187f1e0b829"
+  },
+  {
+    "name": "prod",
+    "service": "kafka-schema-orchestrator",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "1d78f534-f966-48d6-aba4-18edcf0cd636"
+  },
+  {
+    "name": "dev",
+    "service": "events",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "1efee467-7ec8-4646-ad21-787a44ce1c39"
+  },
+  {
+    "name": "prod",
+    "service": "hasura",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "2017cfef-0053-48d6-94d2-54453287ac78"
+  },
+  {
+    "name": "canva",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "20d87890-a073-4531-a4d2-d78aef20fa5e"
+  },
+  {
+    "name": "leonardo",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "20d87890-a073-4531-a4d2-d78aef20fa5e"
+  },
+  {
+    "name": "prod",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "20d87890-a073-4531-a4d2-d78aef20fa5e"
+  },
+  {
+    "name": "canva",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "20d87890-a073-4531-a4d2-d78aef20fa5e"
+  },
+  {
+    "name": "leonardo",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "20d87890-a073-4531-a4d2-d78aef20fa5e"
+  },
+  {
+    "name": "dev",
+    "service": "rekognition-moderation",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "2311861a-46b9-4cc5-a73d-9a4f0bf5aef2"
+  },
+  {
+    "name": "dev",
+    "service": "api-sls",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "2e19d4b0-dd2a-45cc-b61c-1ca1d5b7974a"
+  },
+  {
+    "name": "prod",
+    "service": "events",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "363a700a-09fb-4825-a2c7-7dcec3e698bf"
+  },
+  {
+    "name": "dev",
+    "service": "image-access-verify",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "3707826a-a9b7-41b2-95e8-ca008d1e694f"
+  },
+  {
+    "name": "dev",
+    "service": "enterprise-workflows",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "3aa343aa-6321-4009-8087-e653bceffb6c"
+  },
+  {
+    "name": "dev",
+    "service": "user-retentions",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "3ccd2564-4d23-40b2-a90b-fa0548c6a7bc"
+  },
+  {
+    "name": "prod",
+    "service": "engagement-tracker",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "4660c434-cf61-4c34-a102-6fdcdcbf3abd"
+  },
+  {
+    "name": "prod",
+    "service": "provider-stabilityai",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "4940d198-9a39-416f-a7ac-1b30bb132542"
+  },
+  {
+    "name": "dev",
+    "service": "surveys",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "51bdb7cf-f427-4fbe-9293-69e5314e51d4"
+  },
+  {
+    "name": "dev",
+    "service": "kafka-schema-orchestrator",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "542a77a1-3a40-42ae-863a-59b5e8d7d275"
+  },
+  {
+    "name": "dev",
+    "service": "moderation",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "5eb0729f-58a6-4a79-b37f-8c420be0d905"
+  },
+  {
+    "name": "prod",
+    "service": "payments-google",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "619b7031-8b73-4a2e-a1a1-8731e3efe3be"
+  },
+  {
+    "name": "prod",
+    "service": "payments-stripe",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "62115f43-d0d5-40e9-ba5c-4b2b3e7c2b77"
+  },
+  {
+    "name": "dev",
+    "service": "partner-payments",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "6617b6d2-960b-4517-95c6-7cedea3042c2"
+  },
+  {
+    "name": "dev",
+    "service": "communication-api",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "71cff84f-33e4-48c5-9bd0-9b743397a277"
+  },
+  {
+    "name": "prod",
+    "service": "surveys",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "7883e623-49f7-4dca-a248-17abaf97310b"
+  },
+  {
+    "name": "dev",
+    "service": "auth-cognito",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "7c257d84-503a-4eee-8fc8-647886083796"
+  },
+  {
+    "name": "dev",
+    "service": "enterprise",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "8227b24f-a6b2-4ca5-a74b-8aeaabd0337c"
+  },
+  {
+    "name": "dev",
+    "service": "payments",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "8fbcef9e-1c4b-4b09-9ccc-6daf11cf6594"
+  },
+  {
+    "name": "prod",
+    "service": "image-access-verify",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "92038e2b-0d35-40bb-a93f-b23619d21ca1"
+  },
+  {
+    "name": "prod",
+    "service": "rekognition-moderation",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "9301da67-5281-4a93-ae6f-35946b39ed6f"
+  },
+  {
+    "name": "prod",
+    "service": "email-mailchimp",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "9e20ef5e-d94d-4326-8767-146148e1f7f9"
+  },
+  {
+    "name": "prod",
+    "service": "generations",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "a912b15d-25f8-4dcc-a59f-ab00a462e91f"
+  },
+  {
+    "name": "prod",
+    "service": "msk",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "addec4dd-8779-4a84-95c7-cc721f5838c7"
+  },
+  {
+    "name": "prod",
+    "service": "auth-cognito",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "aeca2dae-4c5d-45e8-bcc0-00483c80724c"
+  },
+  {
+    "name": "prod",
+    "service": "api-sls",
+    "created_at": "2025-04-08 11:15:56.803433+00",
+    "environment": "prod",
+    "id": "b08d80c9-3346-4e3a-b3de-7e0606516fa0"
+  },
+  {
+    "name": "prod",
+    "service": "partner-payments",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "b2c4e830-848e-4db3-84bc-cb826917570d"
+  },
+  {
+    "name": "prod",
+    "service": "payments-paddle",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "b758b071-8b50-4736-9864-565768ab0112"
+  },
+  {
+    "name": "prod",
+    "service": "users",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "ba3593ec-1dc7-4e77-9fca-a23de7f67f21"
+  },
+  {
+    "name": "dev",
+    "service": "crm-api",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "c4f1a5b4-861b-4cd9-a7e9-b3b12d3d6ee7"
+  },
+  {
+    "name": "prod",
+    "service": "payments",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "cd0212a6-c1c6-4057-b1fa-dc2de93de9cc"
+  },
+  {
+    "name": "prod",
+    "service": "apple",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "cffd4dc0-4bc3-43e0-bac5-3d0c0338b14d"
+  },
+  {
+    "name": "dev",
+    "service": "hasura",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "d30eb07a-f626-4f16-953a-6a97d995f8c3"
+  },
+  {
+    "name": "dev",
+    "service": "payments-paddle",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "d40ed729-f2d2-40d8-96d9-e1361e617452"
+  },
+  {
+    "name": "dev",
+    "service": "users",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "d5d18a5d-c7d5-4797-9a04-18de68d7286d"
+  },
+  {
+    "name": "prod",
+    "service": "enterprise-workflows",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "d884a780-4412-40e8-9029-ff14dff79cd8"
+  },
+  {
+    "name": "coke",
+    "service": "enterprise-workflows",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "d884a780-4412-40e8-9029-ff14dff79cd8"
+  },
+  {
+    "name": "coke",
+    "service": "enterprise-workflows",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "d884a780-4412-40e8-9029-ff14dff79cd8"
+  },
+  {
+    "name": "prod",
+    "service": "crm-api",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "d9549eb2-d9b0-415a-aa4d-a0ab81920a74"
+  },
+  {
+    "name": "prod",
+    "service": "communication-api",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "dce31798-11d0-406f-b670-d2868e5d0d0f"
+  },
+  {
+    "name": "dev",
+    "service": "payments-stripe",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "de3730a2-dc45-4a08-93a2-afbcf77315ec"
+  },
+  {
+    "name": "prod",
+    "service": "user-retentions",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "prod",
+    "id": "ef6dc6a7-5857-45ec-930c-b00aaec5214e"
+  },
+  {
+    "name": "dev",
+    "service": "apple",
+    "created_at": "2025-04-08 11:31:43.01363+00",
+    "environment": "dev",
+    "id": "f08aff50-84b5-4021-b165-b1e1bd3f77c6"
+  }
+]

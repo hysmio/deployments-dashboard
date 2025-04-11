@@ -1,6 +1,6 @@
 "use client";
 
-import { Service } from "@/lib/types";
+import { Service } from "@/lib/models/service";
 import { ServiceHeader } from "@/components/ServiceHeader";
 import { EnvironmentAccordion } from "@/components/EnvironmentAccordion";
 import { useServiceInstances } from "@/lib/api";
@@ -39,10 +39,14 @@ export function ServiceContent({ service }: ServiceContentProps) {
     return a.localeCompare(b);
   });
 
+  const serviceData = {
+    ...service,
+  };
+
   return (
     <div className="space-y-6">
       <ServiceHeader
-        service={service}
+        service={serviceData}
         instanceCount={pagination?.total || instances.length}
       />
 

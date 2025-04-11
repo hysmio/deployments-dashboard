@@ -1,0 +1,158 @@
+[
+  {
+    "name": "api-sls",
+    "repo_url": "https://github.com/Leonardo-Interactive/leonardo-platform-serverless",
+    "repo_path": "services/api-sls",
+    "created_at": "2025-04-08 10:06:47.999484"
+  },
+  {
+    "name": "apple",
+    "repo_url": "https://github.com/Leonardo-Interactive/apple-platform-serverless",
+    "repo_path": "services/apple",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "auth-cognito",
+    "repo_url": "https://github.com/Leonardo-Interactive/auth-cognito",
+    "repo_path": "services/auth-cognito",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "communication-api",
+    "repo_url": "https://github.com/Leonardo-Interactive/communication-api",
+    "repo_path": "services/communication-api",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "crm-api",
+    "repo_url": "https://github.com/Leonardo-Interactive/crm-api",
+    "repo_path": "services/crm-api",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "email-mailchimp",
+    "repo_url": "https://github.com/Leonardo-Interactive/email-mailchimp",
+    "repo_path": "services/email-mailchimp",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "engagement-tracker",
+    "repo_url": "https://github.com/Leonardo-Interactive/engagement-tracker",
+    "repo_path": "services/engagement-tracker",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "enterprise",
+    "repo_url": "https://github.com/Leonardo-Interactive/enterprise",
+    "repo_path": "services/enterprise",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "enterprise-workflows",
+    "repo_url": "https://github.com/Leonardo-Interactive/enterprise-workflows",
+    "repo_path": "services/enterprise-workflows",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "events",
+    "repo_url": "https://github.com/Leonardo-Interactive/events",
+    "repo_path": "services/events",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "generations",
+    "repo_url": "https://github.com/Leonardo-Interactive/generations",
+    "repo_path": "services/generations",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "hasura",
+    "repo_url": "https://github.com/Leonardo-Interactive/hasura",
+    "repo_path": "services/hasura",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "image-access-verify",
+    "repo_url": "https://github.com/Leonardo-Interactive/image-access-verify",
+    "repo_path": "services/image-access-verify",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "kafka-schema-orchestrator",
+    "repo_url": "https://github.com/Leonardo-Interactive/kafka-schema-orchestrator",
+    "repo_path": "services/kafka-schema-orchestrator",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "moderation",
+    "repo_url": "https://github.com/Leonardo-Interactive/moderation",
+    "repo_path": "services/moderation",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "msk",
+    "repo_url": "https://github.com/Leonardo-Interactive/msk",
+    "repo_path": "services/msk",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "partner-payments",
+    "repo_url": "https://github.com/Leonardo-Interactive/partner-payments",
+    "repo_path": "services/partner-payments",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "payments",
+    "repo_url": "https://github.com/Leonardo-Interactive/payments",
+    "repo_path": "services/payments",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "payments-google",
+    "repo_url": "https://github.com/Leonardo-Interactive/payments-google",
+    "repo_path": "services/payments-google",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "payments-paddle",
+    "repo_url": "https://github.com/Leonardo-Interactive/payments-paddle",
+    "repo_path": "services/payments-paddle",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "payments-stripe",
+    "repo_url": "https://github.com/Leonardo-Interactive/payments-stripe",
+    "repo_path": "services/payments-stripe",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "provider-stabilityai",
+    "repo_url": "https://github.com/Leonardo-Interactive/provider-stabilityai",
+    "repo_path": "services/provider-stabilityai",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "rekognition-moderation",
+    "repo_url": "https://github.com/Leonardo-Interactive/rekognition-moderation",
+    "repo_path": "services/rekognition-moderation",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "surveys",
+    "repo_url": "https://github.com/Leonardo-Interactive/surveys",
+    "repo_path": "services/surveys",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "user-retentions",
+    "repo_url": "https://github.com/Leonardo-Interactive/user-retentions",
+    "repo_path": "services/user-retentions",
+    "created_at": "2025-04-08 10:06:47"
+  },
+  {
+    "name": "users",
+    "repo_url": "https://github.com/Leonardo-Interactive/users",
+    "repo_path": "services/users",
+    "created_at": "2025-04-08 10:06:47"
+  }
+]

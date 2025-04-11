@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
-import { 
-  getDeploymentsByInstance, 
-  getDeploymentsByService, 
-  getDeploymentsByEnvironment,
-  getInstanceById 
-} from '@/lib/data';
+import { InstanceRepository } from '@/lib/repositories/InstanceRepository';
+import { DeploymentService } from '@/lib/services/DeploymentService';
 
 // GET /api/deployments - Get deployments with filters and pagination
 export async function GET(request: Request) {
@@ -20,24 +16,26 @@ export async function GET(request: Request) {
   const page = pageParam ? parseInt(pageParam, 10) : 1;
   const limit = limitParam ? parseInt(limitParam, 10) : 10;
   
+  const deploymentService = new DeploymentService();
+  const instanceRepo = new InstanceRepository();
   let deployments = [];
   
   try {
     // Get deployments based on provided parameters
     if (instanceId) {
       // Verify the instance exists
-      const instance = getInstanceById(instanceId);
+      const instance = await instanceRepo.findOne({ id: instanceId });
       if (!instance) {
         return NextResponse.json(
           { error: 'Instance not found' }, 
           { status: 404 }
         );
       }
-      deployments = getDeploymentsByInstance(instanceId);
+      deployments = await deploymentService.getDeploymentsByInstance(instanceId);
     } else if (serviceName && environment) {
-      deployments = getDeploymentsByEnvironment(serviceName, environment);
+      deployments = await deploymentService.getDeploymentsByEnvironment(serviceName, environment);
     } else if (serviceName) {
-      deployments = getDeploymentsByService(serviceName);
+      deployments = await deploymentService.getDeploymentsByService(serviceName);
     } else {
       return NextResponse.json(
         { error: 'At least one filter parameter is required (instanceId, service)' }, 

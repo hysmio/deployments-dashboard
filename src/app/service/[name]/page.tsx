@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getServiceByName } from "@/lib/data";
+import { ServiceRepository } from "@/lib/repositories/ServiceRepository";
 import { ServiceContent } from "@/components/ServiceContent";
 
 interface ServicePageProps {
@@ -10,11 +10,16 @@ interface ServicePageProps {
 
 export default async function ServicePage({ params }: ServicePageProps) {
   const { name } = await params;
-  const service = getServiceByName(name);
+  const serviceRepo = new ServiceRepository();
+  const service = await serviceRepo.findOne({ name });
 
   if (!service) {
     notFound();
   }
 
-  return <ServiceContent service={service} />;
+  const serviceData = {
+    ...service,
+  };
+
+  return <ServiceContent service={serviceData} />;
 }

@@ -21,9 +21,9 @@ export async function GET(request: Request) {
   const days = timeRangeParam ? parseInt(timeRangeParam, 10) : 30;
   
   const stats = {
-    recentDeployments: countRecentDeployments(serviceName, days),
-    totalDeployments: countDeploymentsByService(serviceName),
-    instancesByEnvironment: countInstancesByEnvironment(serviceName)
+    recentDeployments: await countRecentDeployments(serviceName, days),
+    totalDeployments: await countDeploymentsByService(serviceName),
+    instancesByEnvironment: await countInstancesByEnvironment(serviceName)
   };
   
   return NextResponse.json(stats);

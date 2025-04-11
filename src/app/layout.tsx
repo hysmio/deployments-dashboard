@@ -4,6 +4,8 @@ import Link from "next/link";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { auth } from "@/auth";
+import UserMenu from "@/components/UserMenu";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -12,11 +14,13 @@ export const metadata: Metadata = {
   description: "Internal dashboard for service deployment monitoring",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -36,10 +40,11 @@ export default function RootLayout({
             <h1 className="text-xl font-semibold select-none">
               API Services Dashboard
             </h1>
-            <nav className="flex space-x-4">
+            <nav className="flex space-x-4 items-center">
               <Link href="/" className="hover:text-blue-300 transition-colors">
                 Services
               </Link>
+              <UserMenu user={session?.user} />
             </nav>
           </div>
         </header>

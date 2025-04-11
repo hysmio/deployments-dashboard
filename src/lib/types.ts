@@ -1,18 +1,3 @@
-export interface Service {
-  name: string;
-  repo_url: string;
-  repo_path: string;
-  created_at: string;
-}
-
-export interface Instance {
-  id: string;
-  name: string;
-  service: string;
-  created_at: string;
-  environment: string;
-}
-
 export type EventType = 
   | 'deployment_started'
   | 'deployment_succeeded' 
@@ -71,26 +56,4 @@ export interface DeploymentFailedEventData {
   plan_output?: string;
   apply_output?: string;
   approval_url?: string;
-}
-
-export interface Event {
-  id: string;
-  created_at: string;
-  event_type: EventType;
-  event_data: DeploymentStartedEventData | DeploymentSucceededEventData | DeploymentUpdatedEventData | DeploymentFailedEventData;
-  instance_id: string;
-}
-
-export interface Deployment {
-  id: string; // ID of the starting event
-  buildkite_build_url: string;
-  commit?: string;
-  commit_message?: string;
-  commit_author?: string;
-  start_time: string;
-  end_time?: string;
-  status: 'succeeded' | 'failed' | 'in-progress';
-  events: Event[];
-  instance_id: string;
-  failed_jobs?: string[];
 }
